@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Front End Exam 1</title>
+</head>
+<style type="text/css">
+	
+html,body{
+width:100%;
+height: 100%;
+}
+
+.container{
+width: 210px;
+height: 400px;
+margin: auto;
+position: relative;
+background-color: white
+}
+
+.container div{
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+position: absolute;
+color: white;
+
+}
+
+
+.container div:nth-child(1){
+margin:0;
+
+}
+
+.container div:nth-child(2){
+margin: 15px;
+width: calc(100% - 15px);
+height: calc(100% - 15px);
+}
+
+
+.container div:nth-child(3){
+margin: 30px;
+width: calc(100% - 30px);
+height: calc(100% - 30px);
+
+}
+
+.container div:nth-child(4){
+margin: 45px;
+width: calc(100% - 45px);
+height: calc(100% - 45px);
+}
+
+.container div:nth-child(5){
+margin: 60px;
+width: calc(100% - 60px);
+height:  calc(100% - 60px);
+}
+
+.container div:nth-child(6){
+margin: 75px;
+width: calc(100% - 75px);
+height: calc(100% - 75px);
+}
+
+
+.container div:nth-child(7){
+margin: 90px;
+width: calc(100% - 90px);
+height: calc(100% - 90px);
+}
+
+
+.container div:nth-child(8){
+margin: 105px;
+width: calc(100% - 105px);
+height: calc(100% - 105px);
+}
+
+
+.container div:nth-child(9){
+margin: 120px;
+width: calc(100% - 120px);
+height: calc(100% - 120px);
+}
+
+
+.container div:nth-child(10){
+margin: 135px;
+width: calc(100% - 135px);
+height: calc(100% - 135px);
+}
+
+
+.container div:nth-child(odd){
+                background-color: blue;
+            }
+.container div:nth-child(even){
+                background-color: black;
+            }
+	
+</style>
+<body>
+<div class="container">
+<div class="odd">&nbsp; &nbsp; Div 1</div>
+<div class="even">&nbsp; &nbsp; Div 2</div>
+<div class="odd">&nbsp; &nbsp; Div 3</div>
+<div class="even">&nbsp; &nbsp; Div 4</div>
+<div class="odd">&nbsp; &nbsp; Div 5</div>
+<div class="even">&nbsp; &nbsp; Div 6</div>
+<div class="odd">&nbsp; &nbsp; Div 7</div>
+<div class="even">&nbsp; &nbsp; Div 8</div>
+<div class="odd">&nbsp; &nbsp; Div 9</div>
+<div class="even">&nbsp; &nbsp; Div 10</div>
+
+</div>
+
+
+
+</body>
+
+<script type="text/javascript">
+	
+window.onload = function() {
+
+//Set color for odd divs 
+var odd = document.getElementsByClassName("odd");
+var odds =  odd.length;
+
+for(var i=0 ; i<odds; i++){
+   odd[i].style.backgroundColor="#000080";
+}
+
+//Set color for even divs 
+var even = document.getElementsByClassName("even");
+var evens =  even.length;
+
+for(var i=0 ; i<evens; i++){
+   even[i].style.backgroundColor="#000";
+}
+
+}
+
+setTimeout(function(){
+           var oddIndex = 0;
+           var evenIndex = 0;
+           setInterval(function(){
+               var oddElements = document.querySelectorAll('.container>div:nth-child(odd)')
+               var oddColors = ['#800080', 'black', '#008080','black','#0000FF']
+
+               var evenElements = document.querySelectorAll('.container>div:nth-child(even)')
+               var evenColors = ['black', '#0F4026', 'black','#194A75','black']
+               
+               for(var o = 0; o < oddElements.length ; o++){
+                   oddElements[o].style.background = oddColors[oddIndex]
+               }
+
+               for(var e = 0; e < evenElements.length ; e++){
+                   evenElements[e].style.background = evenColors[evenIndex]
+               }
+
+               oddIndex++;
+               evenIndex++;
+
+               if(oddIndex == oddColors.length){
+                   oddIndex = 0;
+               }
+
+               if(evenIndex == evenColors.length){
+                   evenIndex = 0;
+               }
+           }, 1000)
+            }, 3000)
+
+
+</script>
+</html>

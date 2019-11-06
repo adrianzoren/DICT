@@ -1,0 +1,29 @@
+Objective:
+Replicate the design and functionalities of the page based on the given video. The main output is an HTML file with
+the embedded CSS and other assets.
+
+
+Criteria:
+1. CSS Box Model and Positioning
+2. Javascript Fundamentals
+3. Document Object Model
+
+
+Challenge:
+1. Do it without using any theme frameworks and javascript plugins/packages
+
+
+Instructions:
+On page load, display the default and other color. After 3 seconds, the default color will be changed based on the colors mentioned below (check Colors in order) every second. After reaching the last color, the default color should go back to the first color in the "Colors in order" section below.
+
+Default color (on page load): #000080 
+Other color: #000
+
+Colors in order:
+#800080
+#0F4026
+#008080
+#194A75
+#0000FF
+
+

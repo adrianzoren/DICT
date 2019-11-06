@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12.005" height="25" viewBox="0 0 12.005 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="12.005" height="25" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Stars_yellow" data-name="Stars, yellow" clip-path="url(#clip-path)">
+    <g transform="translate(-322.293 -2465.361)">
+      <path id="Path_654" data-name="Path 654" d="M14,2l3.708,7.512L26,10.724l-6,5.844,1.416,8.256L14,20.924l-7.416,3.9L8,16.568,2,10.724l8.292-1.212Z" transform="translate(320.293 2463.361)" fill="#ffc400"/>
+    </g>
+  </g>
+</svg>
